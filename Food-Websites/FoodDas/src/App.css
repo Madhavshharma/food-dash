@@ -1,0 +1,31 @@
+/* styles.css */
+.custom-dashed-line {
+    width: 100%;
+    border-top: 4px dashed rgb(253, 88, 0); /* Thickness and color of the line */
+    border-style: dashed;
+    border-top-style: dashed;
+    border-top-width: 4px;
+    border-color: rgb(231, 89, 32);
+  }
+  
+  .custom-dashed-line::after {
+    content: "";
+    display: block;
+    margin-top: -4px; /* Adjust according to the line thickness */
+    width: 100%;
+    border-top: 4px dashed transparent;
+    background: repeating-linear-gradient(
+      to right,
+      black 0,
+      black 10px,
+      transparent 10px,
+      transparent 20px
+    );
+  }
+  .custom-rounded {
+    border-top-left-radius: 200%;
+    border-top-right-radius: 200%;
+    border-bottom-left-radius: 0.7rem; /* Adjust as needed */
+    border-bottom-right-radius: 0.7rem; /* Adjust as needed */
+  }
+  
